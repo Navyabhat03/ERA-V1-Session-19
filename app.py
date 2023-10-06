@@ -1,9 +1,3 @@
-#Acknowledgments:
-#This project is inspired by:
-#1. https://github.com/haltakov/natural-language-image-search by Vladimir Haltakov
-#2. OpenAI's CLIP
-
-
 
 #Importing all the necessary libraries
 import torch
@@ -59,7 +53,7 @@ def similarity(feature, photo_features):
   return similarities
 
 def find_best_matches(image, mode, text):
-  # Compute the similarity between the descrption and each photo using the Cosine similarity
+  # Compute the similarity between the description and each photo using the Cosine similarity
   print ("Mode now ",mode) 
 
   if mode == "Text2Image":
